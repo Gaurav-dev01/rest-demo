@@ -1,4 +1,4 @@
-package com.thinkconstructive.rest_demo.model;
+package com.thinkconstructive.restdemo.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -13,8 +13,10 @@ public class CloudVendor {
 	private String vendorAddress;
 	private String vendorPhoneNumber;
 
+	public CloudVendor() {
+	}
+
 	public CloudVendor(String vendorId, String vendorName, String vendorAddress, String vendorPhoneNumber) {
-		super();
 		this.vendorId = vendorId;
 		this.vendorName = vendorName;
 		this.vendorAddress = vendorAddress;
